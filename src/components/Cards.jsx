@@ -50,11 +50,11 @@ const Cards = () => {
                     value={item.rating/item.userRated}
                     edit={false}
                   />
-                  <div className="flex gap-1 relative sm:gap-3">
-                    <span>{item.year}</span>
+                  <div className="flex items-center gap-1 relative sm:gap-3">
+                    <span className="text-xs md:text-base">{item.year}</span>
                     <span>.</span>
-                    <span>{item.length}</span>
-                    <span className="absolute right-0">{item.type}</span>
+                    <span className="text-xs md:text-base">{item.length}</span>
+                    <span className="absolute right-0 md:text-base text-xs">{item.type}</span>
                   </div>
                 </div>
               </div>
